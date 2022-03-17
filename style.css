@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Open+Sans&family=Source+Sans+Pro:wght@700&family=Zen+Antique+Soft&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Barre de navigation*/
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    position: sticky;
+    top: 0%;
+    
+    
+}
+
+nav h1
+{
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    
+}
+nav .onglets
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.onglets ul li
+{
+    list-style: none;
+    display: inline-block;
+    position: relative; 
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.onglets ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+.onglets ul li::after
+{
+    content: '' ;
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.onglets ul li:hover::after
+{
+    width: 100% ;
+}
+
+
+/*fin de la barre de navigation*/
+
+/*Header*/
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('Images/recording-studio-1869560_1920.jpg');
+    background-size: cover;
+    color:white ;
+    padding: 40px;
+    
+}
+
+header h1
+{
+    font-size:  50px; 
+    max-width: 500%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header h4
+{
+    margin-top: 0px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px;
+}
+
+
+    
+/*Fin Header*/
+
+/*mix mastering formule*/
+.main
+{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;  
+    
+}
+
+.main .content .mixage
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px ;
+}
+
+
+
+.main .content .mastering
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px ;
+}
+
+.main .content .formule
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px ;
+}
+
+.main .content .mixage .left 
+{
+    flex: 0 0 30%;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    
+}
+
+.main .content .mixage.right 
+
+{
+    flex: 0 0 70%;
+}
+
+.main .content .mixage .right img
+{
+    height: 300px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+
+.main .content .mastering .left 
+{
+    flex: 0 0 30%;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+.main .content .mastering.right
+{
+    flex: 0 0 70%;
+}
+
+.main .content .mastering .right img
+{
+    height: 300px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.main .content .formule .left 
+{
+    flex: 0 0 30%;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+.main .content .formule.right
+{
+    flex: 0 0 70%;
+}
+
+.main .content .formule .right img
+{
+    height: 300px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/*fin mix mastering formule*/
+
+/*Footer*/
+footer{
+    margin-top: 40px;
+    background-color:black;
+    color: white;
+    padding: 30px 100px;;
+}
+
+footer h1
+{
+    font-family: 'Open Sans', sans-serif;
+    width: 20%;
+    padding-bottom: 5px;
+}
+
+footer a
+{
+    color: white;
+    font-size: 30px;
+    margin-right: 10px;
+
+}
+/*Fin footer*/
+
+/*Portable*/
+
+    @media screen and (max-width:680px){
+        nav .onglets {
+            margin-left: 0px;
+            margin-bottom: 20px;
+        }
+
+        
+        .main .content .mixage {
+            margin: 10px;
+        }
+        .main .content .mastering {
+            margin: 10px;
+        }
+        .main .content .formule {
+            margin: 10px;
+        }
+        .main .content .mixage .right img{
+            height:200px;
+            width: 100%;
+            margin-top: -0px;
+        }
+        .main .content .mastering .right img{
+            height:200px;
+            width: 100%;
+            margin-top: -0px;
+        }
+        .main .content .formule .right img{
+            height:200px;
+            width: 100%;
+            margin-top: -0px;
+        }
+        .main .content .mixage{
+            display: block;
+        }
+
+        .main .content .mastering{
+            display: block;
+        }
+        .main .content .formule{
+            display: block;
+        }
+
+        
+        footer{
+            padding: 30px;
+        }
+    }
+
+/*Fin portable*/
